@@ -1,0 +1,1085 @@
+/* Fonstes utilizadas no site ↓ */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Exo:wght@100;400;800&family=Inter:wght@100;400;700;800;900&family=Poppins:wght@100;400;700;800&family=Roboto+Mono:wght@100;400;700&display=swap");
+
+/* 
+font-family: 'Anton', sans-serif;
+font-family: 'Exo', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace; 
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilização geral ↓ */
+
+h2,
+h3,
+h4,
+a,
+button {
+  color: #cb6600;
+  font-family: "Anton", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Limita o contéudo dentro dos 1200px  ↓ */
+
+.site {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Menu ↓ */
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.topo nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.topo div ul {
+  display: flex;
+  list-style: none;
+}
+
+.topo h1 {
+  background: url(../img/logo01.svg) no-repeat;
+  margin-left: 10px;
+  width: 300px;
+  height: 52px;
+  text-indent: -9999px;
+}
+
+.topo div nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-fixo {
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.829);
+  animation: fadeIn 2s ease-in-out;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.726);
+}
+
+.menu a {
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 30px;
+  margin-right: 10px;
+  transition: all 0.6s;
+  font-size: 22px;
+}
+
+.menu a:hover {
+  color: #cb6600;
+}
+
+.ativo {
+  color: #cb6600 !important;
+}
+
+/* Redes Sociais */
+
+.redeSocialTodo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redeSocialTodo a {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 50%;
+  display: block;
+  text-indent: -9999px;
+  margin-right: 10px;
+}
+
+.redeSocialTodo ul li:nth-child(1) a {
+  background: url(../img/redeSocial/facepreto.svg) no-repeat;
+  transition: all 0.4s;
+}
+
+.redeSocialTodo ul li:nth-child(1) a:hover {
+  background: url(../img/redeSocial/facebook.svg) no-repeat;
+}
+
+.redeSocialTodo ul li:nth-child(2) a {
+  background: url(../img/redeSocial/instaPreto.svg) no-repeat;
+  transition: all 0.4s;
+}
+
+.redeSocialTodo ul li:nth-child(2) a:hover {
+  background: url(../img/redeSocial/instagram.svg) no-repeat;
+}
+
+.redeSocialTodo ul li:nth-child(3) a {
+  background: url(../img/redeSocial/WhatsPreto.svg) no-repeat;
+  transition: all 0.4s;
+}
+
+.redeSocialTodo ul li:nth-child(3) a:hover {
+  background: url(../img/redeSocial/WhatsVerde.svg) no-repeat;
+}
+
+.redeSocialTodo ul li:last-child a {
+  margin-right: 0;
+}
+
+/* Botão Login */
+
+.redeSocialTodo button {
+  border-radius: 5px 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-family: "Anton", sans-serif;
+  color: #333;
+  font-weight: bold;
+  background: #cb6600;
+  border: none;
+  font-size: 18px;
+  padding: 5px 40px;
+  transition: all 0.4s;
+}
+
+.redeSocialTodo button:hover {
+  color: #cb6600;
+  background: #333;
+}
+
+/* Banner ↓ */
+
+.banner img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* seta esquerda ↓ */
+
+.banner .slick-prev {
+  left: 25px;
+  z-index: 1;
+}
+
+/* seta direita ↓ */
+
+.banner .slick-next {
+  right: 35px;
+}
+
+.banner .slick-prev:before,
+.banner .slick-next:before {
+  font-size: 35px;
+  color: #cb6600;
+  opacity: 0.85;
+}
+
+/* tamanho das bolinhas do carrosel ↓ */
+
+.banner .slick-dots li button:before {
+  font-size: 16px;
+  color: #fff;
+}
+
+.banner .slick-dots li.slick-active button:before {
+  opacity: 0.85;
+  color: #cb6600;
+}
+
+/* posição das bolinhas ↓ */
+
+.banner .slick-dots {
+  bottom: 30px;
+}
+
+.banner .slick-dots li {
+  margin: 0 15px;
+}
+
+/* Sobre ↓ */
+
+.sobre {
+  padding: 20px 0;
+  
+}
+
+.sobre div {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+.sobre div div {
+  flex-direction: column;
+  width: 45%;
+  justify-content: flex-start;
+}
+
+#contSobre {
+  border: solid thin #333;
+  border-radius: 25px;
+  padding: 20px 10px;
+  text-align: center;
+  
+}
+
+#contSobre h2 {
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #cb6600;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+}
+
+#contSobre p {
+  font-size: 20px;
+  line-height: 25px;
+  flex-grow: 1;
+  color: #4d4d4d;
+}
+
+#contSobre a {
+  text-decoration: none;
+  padding: 5px 25px;
+  background: #cb6600;
+  color: #f2f2f2;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  align-self: flex-end;
+  transition: all 0.6s;
+}
+
+#contSobre a:hover {
+  background: #f2f2f2;
+  color: #cb6600;
+  border: solid thin #cb6600;
+}
+
+.sobre div div:nth-child(2) img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+/* Serviços */
+
+.servico {
+  padding: 50px 0;
+  text-align: center;
+  background: url(../img/fundo1.png) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.servico h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #cb6600;
+  margin-bottom: 50px;
+}
+
+.servico div div {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* caixas */
+
+.servico div div div {
+  width: 25%;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.servico div div div h3 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.servico div div div img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.servico div div div p {
+  flex-grow: 1;
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 80px;
+  color: #4d4d4d;
+}
+
+.servico div div div a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  align-self: flex-end;
+  padding: 5px 15px;
+  background: #cb6600;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #f2f2f2;
+  border: solid 2px #cb6600;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.servico div div div a:hover {
+  background: #f2f2f2;
+  color: #cb6600;
+}
+
+.servico1 {
+  padding: 50px 0;
+  text-align: center;
+  background: url(../img/fundo1.png) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 500px;
+}
+
+/* Galeria ↓ */
+
+.galeria {
+  padding: 50px;
+}
+
+.galeria img {
+  width: 90% !important;
+}
+
+/* Estilização e posicionamento das setas */
+
+.galeria .slick-prev {
+  left: 10px;
+}
+
+.galeria .slick-next {
+  right: 40px;
+}
+
+.galeria .slick-prev:before,
+.galeria .slick-next:before {
+  color: #cb6600;
+  font-size: 30px;
+}
+
+/* Depoimento ↓ */
+
+.depor {
+  width: 100%;
+  padding: 50px 0;
+  background: url(../img/fundo1.png) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.depor h2 {
+  text-align: center;
+  color: #cb6600;
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.depoimento {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.deposlide {
+  padding: 20px;
+  text-align: center;
+  background: #f2f2f2;
+  margin-top: 30px;
+  border: 1px solid #333;
+  border-radius: 25px;
+  width: 70%;
+}
+
+.deposlide div img {
+  margin-top: 20px;
+  width: 60px;
+  margin-bottom: 20px;
+  display: inline;
+}
+
+.deposlide div p {
+  margin: auto;
+  font-size: 20px;
+  width: 80%;
+  text-align: justify;
+  flex-wrap: wrap;
+  border: solid 1px #4d4d4d;
+  padding: 10px;
+}
+.nomedata {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nomedata h2 {
+  padding: 20px;
+  border: none;
+  color: #cb6600;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* estilização e posicionamento das setas */
+
+.deposlide .slick-next {
+  right: 25px;
+}
+
+.deposlide .slick-prev {
+  left: 25px;
+  z-index: 1;
+}
+
+.deposlide .slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  opacity: 0.75;
+  color: #cb6600;
+}
+
+/* Blog ↓ */
+
+.blog {
+  padding: 50px 0;
+  text-align: center;
+  background: #f2f2f2;
+}
+
+.blog h2 {
+  font-family: "Exo", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: #cb6600;
+  margin-bottom: 50px;
+}
+
+.blog div div {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* caixas */
+
+.blog div div div {
+  flex-direction: column;
+  margin-top: 20px;
+  width: 25%;
+  padding: 20px;
+  background: #4d4d4d;
+}
+
+.blog div div div h3 {
+  font-family: "Exo", sans-serif;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #cb6600;
+}
+
+.blog div div div img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.blog div div div p {
+  flex-grow: 1;
+  font-size: 20px;
+  color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.blog div div div a {
+  align-self: flex-end;
+  padding: 10px 15px;
+  background: #cb6600;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-family: poppins;
+  font-weight: 500;
+  border: solid 2px #cb6600;
+  transition: all 0.3s;
+}
+
+.blog div div div a:hover {
+  background: #f2f2f2;
+  color: #cb6600;
+}
+
+/* Rodapé ↓ */
+
+.rodape {
+  background: url(../img/fundo1.png) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 500px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.boxfoot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxfoot div {
+  width: 45%;
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.boxfoot h2 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.boxfoot h3 {
+  color: #4c4c4c;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: "Anton", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.boxfoot img {
+  width: 25%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.boxfoot ul li a img {
+  width: 80%;
+}
+
+.boxfoot a {
+  display: block;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  color: #4c4c4c;
+  text-decoration: none;
+}
+
+.boxfoot ul {
+  display: flex;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.boxfoot div:nth-child(2) h2 {
+  margin-bottom: 50px;
+}
+
+.boxfoot div:nth-child(2) ul {
+  flex-direction: column;
+}
+
+.boxfoot div:nth-child(2) a {
+  display: block;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: #4c4c4c;
+  text-decoration: none;
+}
+
+.boxfoot div:nth-child(2) a:hover {
+  color: #cb6600;
+}
+
+/* Direitos ↓ */
+
+.rodape section:nth-child(2) {
+  margin-top: 50px;
+  background: #f2f2f2;
+  padding: 5px 10px;
+}
+
+.rodape section:nth-child(2) h2 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #4c4c4c;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.rodape section:nth-child(3) {
+  background: #4c4c4c;
+  padding: 5px 10px;
+}
+
+.rodape section:nth-child(3) h2 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #f2f2f2;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+/* Página Contato */
+
+.form {
+  padding: 50px 0;
+  text-align: center;
+  background: #f2f2f2;
+}
+
+.form h2 {
+  font-family: "Exo", sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: #cb6600;
+  margin-bottom: 50px;
+}
+
+.form form {
+  display: flex;
+  justify-content: space-around;
+  padding: 2.5%;
+  border: solid 1px #333;
+  border-radius: 25px;
+}
+
+.form form div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form input,
+form textarea {
+  width: 98%;
+  padding: 2% 0;
+  margin-bottom: 5%;
+  background: #fff;
+  color: #cb6600;
+  font-size: 1em;
+  font-weight: bold;
+  border: solid thin #333;
+  text-indent: 10px;
+}
+
+form textarea {
+  resize: none;
+  height: 175px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #cb6600;
+  font-size: 1em;
+  text-indent: 10px;
+}
+
+.form form div:nth-child(2) div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 98%;
+}
+
+.form form input[type="submit"],
+.form form button {
+  width: 45%;
+  color: #333;
+  font-family: "Anton", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  background: #cb6600;
+  text-transform: uppercase;
+  border-radius: 5px 10px;
+  height: 50px;
+  cursor: pointer;
+  border: solid 1px #333;
+}
+
+.form form input[type="submit"]:hover,
+.form form button:hover {
+  background: #333;
+  color: #cb6600;
+  transition: all 0.6s;
+}
+
+/* página servico */
+
+.servicoo div img{
+  width: 75% ;
+}
+
+/* Daq pra cima é 1200px - PC */
+
+/* 601-768 até 900 será para Notebook - Inicio */
+
+@media (max-width: 900px) {
+  /* Menu ↓ */
+
+  .topo {
+    flex-direction: column;
+  }
+  .topo h1 {
+    margin: 2% 0;
+  }
+  .topo div nav {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Sobre ↓ */
+  .sobre div {
+    align-items: center;
+  }
+  #contSobre p {
+    line-height: 28px;
+    margin-bottom: 50px;
+  }
+
+  /* Depoimento ↓ */
+
+  .depor {
+    height: 100%;
+  }
+
+  .depoimento {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .depoimento img {
+    width: 40%;
+  }
+
+  .deposlide {
+    width: 85%;
+    padding: 10px;
+  }
+
+  .deposlide div p {
+    width: 70%;
+  }
+  .nomedata {
+    width: 85%;
+  }
+
+  .deposlide .slick-next {
+    right: 15px;
+  }
+
+  .deposlide .slick-prev {
+    left: 8px;
+    z-index: 1;
+  }
+
+  /* Rodapé ↓ */
+
+  .boxfoot {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boxfoot div {
+    width: 75%;
+    margin-bottom: 5%;
+  }
+
+  .boxfoot img {
+    width: 20%;
+  }
+
+  .boxfoot ul li a img {
+    width: 60%;
+  }
+
+  /* Direitos ↓ */
+
+  .rodape section:nth-child(2) {
+    margin-top: 30px;
+  }
+
+  .rodape section:nth-child(2) h2 {
+    font-size: 15px;
+  }
+
+  .rodape section:nth-child(3) h2 {
+    font-size: 15px;
+  }
+}
+
+/* 601-768 até 900 será para Notebook - FIM*/
+
+/* Faz com que a tag button não apareça fora da resolução de 600px */
+
+@media not all and (max-width: 600px) {
+  .abrir-menu,
+  .fechar-menu {
+    display: none;
+  }
+}
+
+/* 0 até 380-600 será para Celular - Inicio */
+
+@media (max-width: 600px) {
+  /* Menu */
+
+  .topo {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .topo div nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu ul li {
+    margin: 5% 0;
+  }
+
+  .menu a {
+    color: #f2f2f2;
+    letter-spacing: 3px;
+  }
+
+  .menu {
+    background: #4d4d4ddc;
+    height: 100%;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    max-width: 350px;
+    width: 50%;
+    z-index: 9;
+    right: -350px;
+    transition: right 0.8s ease-out;
+  }
+
+  .menu-ativo .menu {
+    right: 0;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .abrir-menu {
+    background: url(../img/btn-menu.png);
+    background-size: cover;
+    padding: 20px;
+    border: 0;
+    display: block;
+  }
+
+  .fechar-menu {
+    background: url(../img/btn-fechar.png);
+    background-size: cover;
+    padding: 20px;
+    border: 0;
+    display: block;
+    margin: 5%;
+  }
+
+  .redeSocialTodo {
+    margin: 15% auto;
+  }
+
+  .redeSocialTodo a {
+    padding: 10px 25px;
+  }
+
+  .redeSocialTodo ul {
+    flex-direction: row;
+  }
+  /* Banner */
+
+  .banner {
+    display: none;
+  }
+
+  /* Sobre */
+
+  .sobre div {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .sobre div div {
+    width: 85%;
+    justify-content: flex-start;
+  }
+
+  .sobre div div:nth-child(2) img {
+    width: 100%;
+    border-radius: 50px;
+    border: solid 2px #cb6600;
+    margin-bottom: 5%;
+  }
+
+  /* Serviços */
+
+  .servico div div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servico div div div {
+    width: 85%;
+    height: 650px;
+    margin-bottom: 5%;
+  }
+
+  .servico div div div p {
+    padding-bottom: 0px;
+  }
+
+  /* Depoimentos */
+
+  .depor {
+    height: 100%;
+  }
+
+  .depoimento {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .depoimento img {
+    width: 80%;
+  }
+
+  .deposlide {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .deposlide div p {
+    width: 70%;
+  }
+  .nomedata {
+    width: 85%;
+  }
+
+  .deposlide .slick-next {
+    right: 15px;
+  }
+
+  .deposlide .slick-prev {
+    left: 8px;
+    z-index: 1;
+  }
+
+  /* Blog */
+
+  .blog div div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog div div div {
+    width: 85%;
+    height: 650px;
+  }
+
+  /* Rodapé */
+
+  .boxfoot {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boxfoot div {
+    width: 75%;
+    margin-bottom: 5%;
+  }
+
+  .boxfoot a {
+    font-size: 13px;
+  }
+
+  .boxfoot h3 {
+    font-size: 16px;
+  }
+
+  .boxfoot div:nth-child(2) a {
+    font-size: 15px;
+  }
+
+  .boxfoot img {
+    width: 20%;
+  }
+
+  .boxfoot ul li a img {
+    width: 60%;
+  }
+
+  /* Direitos */
+
+  .rodape section:nth-child(2) {
+    margin-top: 30px;
+  }
+
+  .rodape section:nth-child(2) h2 {
+    font-size: 15px;
+  }
+
+  .rodape section:nth-child(3) h2 {
+    font-size: 15px;
+  }
+}
+
+/* 0 até 380-600 será para Celular - FIM*/
