@@ -31,8 +31,8 @@ if (isset($_POST['email'])) {
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Receber o e-mail
-    $mail->setFrom('cloudwise@smpsistema.com.br', 'Site AGÊNCIA TIPI');
-    $mail->addAddress('biel_nando2012@hotmail.com');     //Destinatario
+    $mail->setFrom('cloudwise@smpsistema.com.br', 'Site AGÊNCIA TIPI'); //e-mail que faz o disparo
+    $mail->addAddress('biel_nando2012@hotmail.com');     //Destinatario / quem recebe o e-mail
 
     // $mail->addAddress('ellen@example.com');               //Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
