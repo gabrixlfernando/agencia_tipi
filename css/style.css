@@ -357,6 +357,7 @@ button {
   border: solid 2px #cb6600;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.3s;
+  margin-top: 10px;
 }
 
 .servico div div div a:hover {
@@ -759,6 +760,10 @@ form textarea {
 
 /* página servico */
 
+.servicoo div{
+  width: 30% !important;
+}
+
 .servicoo div img{
   width: 75% ;
 }
@@ -887,6 +892,11 @@ form textarea {
     align-items: flex-start;
   }
 
+  .topo h1{
+    width: 230px;
+    height: 37px;
+  }
+
   .menu ul li {
     margin: 5% 0;
   }
@@ -979,7 +989,6 @@ form textarea {
 
   .servico div div div {
     width: 85%;
-    height: 650px;
     margin-bottom: 5%;
   }
 
@@ -987,10 +996,19 @@ form textarea {
     padding-bottom: 0px;
   }
 
+  .servicoo div{
+    width: 50% !important;
+    
+  }
+
   /* Depoimentos */
 
   .depor {
     height: 100%;
+  }
+
+  .depor h2{
+    font-size: 1.8em;
   }
 
   .depoimento {
@@ -1048,15 +1066,15 @@ form textarea {
   }
 
   .boxfoot a {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .boxfoot h3 {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .boxfoot div:nth-child(2) a {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .boxfoot img {
@@ -1079,6 +1097,25 @@ form textarea {
 
   .rodape section:nth-child(3) h2 {
     font-size: 15px;
+  }
+
+  /* form */
+
+  .form h2{ 
+    font-size: 1.8em;
+  }
+
+  .form form{
+    flex-direction: column;
+  }
+
+  .form form div{
+    width: 90%;
+    margin: 10px;
+  }
+
+  .form form input[type="submit"], .form form button {
+    font-size: 14px;
   }
 }
 

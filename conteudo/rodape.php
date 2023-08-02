@@ -39,16 +39,16 @@
     <h2 class="ativo">menu</h2>
     <ul>
       <li>
-        <a href="#">Home</a>
+        <a href="index.php">Home</a>
       </li>
       <li>
-        <a href="#">Sobre</a>
+        <a href="sobre.php">Sobre</a>
       </li>
       <li>
-        <a href="#">Serviços</a>
+        <a href="servico.php">Serviços</a>
       </li>
       <li>
-        <a href="#">Contatos</a>
+        <a href="contato.php">Contatos</a>
       </li>
       <li>
         <a href="#">Dúvidas Frequentes</a>
